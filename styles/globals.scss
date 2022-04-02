@@ -112,6 +112,12 @@ a {
   margin-left: var(--col);
 }
 
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 // document.getElementById("handwritting").getTotalLength()
 #handwritting {
   stroke-dasharray: 2486;

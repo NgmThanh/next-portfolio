@@ -1,0 +1,37 @@
+.works_slider_section {
+    width: 100%;
+}
+
+.works_slider {
+    display: flex;
+    gap: 32px;
+
+    .works_slider__items {
+
+        &__canvas {
+            height: 600px;
+    
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__title {
+            font-family: "Poppins";
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0,04em;
+            color: var(--gold-pure);
+            margin: 32px 0 8px;
+
+            & > span {
+                font-weight: 400;
+            }
+        }
+
+        &__description {
+            //TODO ADD LIMIT
+        }
+    }
+}

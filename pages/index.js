@@ -6,6 +6,7 @@ import Text_separator from './Text_separator'
 import Temporaire from './Temporaire'
 import About from './About'
 import Skills from './Skills'
+import Works from './Works'
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
         <Text_separator/>
         <About/>
         <Skills/>
+        <Works/>
+        
         <Temporaire/>
       </main>
 
