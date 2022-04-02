@@ -19,7 +19,7 @@
 }
 
 .hero_description {
-    width: calc(var(--col) * 4);
+    width: calc(var(--col) * 4 - 32px);
     margin: 120px calc(var(--col)) 0;
 }
 

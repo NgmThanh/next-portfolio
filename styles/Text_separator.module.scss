@@ -1,41 +1,42 @@
 .text_separator_section {
     width: 100%;
-    // min-height: 416px;
     margin: 200px 0;
 
     .text_separator__container {
-        display: flex;
         overflow: hidden;
-        position: absolute;
 
-        &_1 {
-            white-space: nowrap;
+        .text_separator__scroll_1 {
+            animation: scrollTextLeft 20s linear infinite;
+        }
+
+        .text_separator__scroll_2 {
             animation: scrollTextRight 20s linear infinite;
         }
-    
-        &_2 {
+
+        & > span {
             white-space: nowrap;
-            animation: scrollTextRight 20s linear infinite;
+            display: inline-block;
         }
-    }
-}
-
-@keyframes scrollTextRight {
-    0% {
-        transform: translate(-100%, 0);
-    }
-
-    100% {
-        transform: translate(0, 0);
     }
 }
 
 @keyframes scrollTextLeft {
     0% {
-        transform: translate(100%, 0);
+        transform: translate3d(0, 0, 0);
     }
 
     100% {
-        transform: translate(0, 0);
+        transform: translate3d(-2432px, 0, 0);
+    }
+}
+
+@keyframes scrollTextRight {
+    0% {
+        transform: translate3d(-2432px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+
     }
 }

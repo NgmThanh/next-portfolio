@@ -4,17 +4,17 @@ export default function Text_separator() {
   return (
     <section className={styles.text_separator_section}>
       <div className={styles.text_separator__container}>
-        <div className={styles.text_separator__container_1}>
+        <span className={styles.text_separator__scroll_1}>
           <span className={'title'}>CREATIVE — DIGITAL — DESIGN — </span>
           <span className={'title'}>CREATIVE — DIGITAL — DESIGN — </span>
-        </div>
+        </span>
       </div>
 
       <div className={styles.text_separator__container}>
-        <div className={styles.text_separator__container_2}>
+      <span className={styles.text_separator__scroll_2}>
           <span className={'title'}>CREATIVE — DIGITAL — DESIGN — </span>
           <span className={'title'}>CREATIVE — DIGITAL — DESIGN — </span>
-        </div>
+        </span>
       </div>
     </section>
   )
