@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Menu from './Menu'
 import Hero from './Hero'
 import Text_separator from './Text_separator'
 import Temporaire from './Temporaire'
 import About from './About'
+import Skills from './Skills'
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
         <Hero/>
         <Text_separator/>
         <About/>
+        <Skills/>
         <Temporaire/>
       </main>
 

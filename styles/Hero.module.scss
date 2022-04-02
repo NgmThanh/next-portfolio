@@ -9,7 +9,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding: calc(var(--vh) * 0.5 - (20rem)) calc(100% / 12) 0;
+    padding: calc(var(--vh) * 0.5 - (20rem)) var(--col) 0;
 }
 
 .hero_subtitle {
@@ -19,19 +19,19 @@
 }
 
 .hero_description {
-    width: calc(var(--vw) / 12 * 4);
-    margin: 120px calc(var(--vw) / 12) 0;
+    width: calc(var(--col) * 4);
+    margin: 120px calc(var(--col)) 0;
 }
 
 .welcome {
     position: absolute;
-    right: calc(var(--vw) / 12);
+    right: var(--col);
     top: calc(var(--vh) * 0.7);
 }
 
 .hero_image__container {
     width: 100%;
-    padding: 160px calc(var(--vw) / 12) 0;
+    padding: 160px var(--col) 0;
 
     // TODO
 

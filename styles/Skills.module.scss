@@ -1,0 +1,38 @@
+.skills_section {
+    margin-top: 240px;
+    position: relative;
+
+    &__title {
+        text-align: center;
+    }
+
+    svg {
+        position: absolute;
+        top: 80px;
+        right: calc(var(--col) * 3);
+    }
+}
+
+.skills_container {
+    display: flex;
+    justify-content: center;
+}
+
+.skills_list {
+    width: calc(var(--col) * 10 - 32px);
+    margin-top: 200px;
+
+    &__first_item {
+        border-top: 1px solid #707070;
+    }
+
+    &__item {
+        display: block;
+        padding: 32px 0;
+        font-size: 80px;
+        line-height: 103px;
+        text-transform: uppercase;
+        list-style-type:none;
+        border-bottom: 1px solid #707070;
+    }
+}
