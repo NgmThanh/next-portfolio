@@ -1,16 +1,24 @@
 .menu {
+    width: 100%;
     letter-spacing: 0.08em;
     font-weight: 400;
     font-size: 1.6rem;
     text-transform: uppercase;
-    width: 100%;
-    padding: 48px 64px;
-    background-color: transparent;
+    padding: 48px var(--active-margin-grid);
+    background: var(--black-19);
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    transition: top 0.3s ease;
 
-    & span {
-        margin-left: 80px;
+    ul {
+        display: flex;
+        gap: 80px;
+
+        li {
+            list-style-type: none;
+        }
     }
 }

@@ -3,7 +3,7 @@ import Works_slider from './Works_slider'
 
 export default function Works() {
   return (
-    <section className={styles.works_section}>
+    <section id="works" className={styles.works_section}>
       <div className={styles.works_title}>
         <h2 className={'title'}>
           Related<br></br>

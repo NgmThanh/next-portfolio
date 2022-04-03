@@ -1,6 +1,6 @@
 .contact_section {
     width: var(--vw);
-    height: var(--vh);
+    height: calc(var(--vh) - 70px);
     margin: auto;
     padding-top: calc(var(--vh) * 0.5 - 18rem);
 

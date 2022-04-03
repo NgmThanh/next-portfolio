@@ -30,15 +30,14 @@
     top: calc(var(--vh) * 0.7);
 }
 
-.hero_image__container {
+.hero_image {
     width: var(--vw);
     padding: 160px var(--col) 0;
     margin: auto;
+    position: relative;
 
-    // TODO
-    .hero_image__canvas {
-        width: calc(70% - 16px);
-        // background: var(--gold-soft);
+    &__canvas {
+        width: calc(var(--col) * 7 - 32px);
 
         img {
             width: 100%;
@@ -46,10 +45,19 @@
             height: auto;
             object-fit: cover;
         }
-
-        .hero_image__side_block {
-            // background: var(--gold-pure);
-            // z-index: 20;
-        }
     }
+}
+
+.hero_button {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: var(--gold-pure);
+    position: absolute;
+    top: 60%;
+    right: calc(var(--col) * 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
 }

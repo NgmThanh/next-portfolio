@@ -1,6 +1,7 @@
 .works_section {
     width: var(--vw);
-    margin: 240px auto 80px;
+    padding: 240px 0 80px;
+    margin: auto;
     position: relative;
 
     h2 {    
@@ -21,7 +22,7 @@
     border-radius: 50%;
     border: 2px solid var(--gold-pure);
     position: absolute;
-    top: 360px;
+    top: 568px;
     left: var(--col);
     display: flex;
     justify-content: center;
