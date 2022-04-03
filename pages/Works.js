@@ -16,7 +16,7 @@ export default function Works() {
 
       <div className={styles.works_circle}>
         <div className={styles.works_circle__inner}>
-          <h3>4</h3>
+          <h3>04</h3>
           <p>Number of total projects</p>
         </div>
       </div>

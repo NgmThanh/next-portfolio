@@ -3,7 +3,7 @@
 }
 
 .about_description {
-    padding: 0 calc(var(--col) + 64px);
+    padding: 0 calc(var(--col) + var(--active-margin-grid));
     margin-bottom: 120px;
     display: flex;
     flex-flow: row nowrap;
@@ -31,7 +31,7 @@
 .about_illustration {
     width: 100%;
     height: var(--vh);
-    padding-left: calc(var(--col) + 64px);
+    padding-left: calc(var(--col) + var(--active-margin-grid));
     position: relative;
 
     svg {
@@ -45,7 +45,7 @@
     }
     
     &__canvas {
-        width: calc(var(--col) * 9 + 64px);
+        width: calc(var(--col) * 9 + var(--active-margin-grid));
         height: var(--vh);
         float: right;
 
@@ -60,7 +60,7 @@
 
 .about_text {
     width: calc(var(--col) * 4);
-    margin-left: calc(var(--col) * 3 + 64px);
+    margin-left: calc(var(--col) * 3 + var(--active-margin-grid));
     margin-top: 120px;
     display: flex;
     flex-flow: row nowrap;

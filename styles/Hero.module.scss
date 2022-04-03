@@ -1,10 +1,10 @@
 .hero_section {
     width: 100%;
-    padding: 0 64px;
 }
 
 .hero_title__container {
-    width: 100%;
+    width: var(--vw);
+    margin: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -25,16 +25,16 @@
 
 .welcome {
     position: absolute;
-    right: var(--col);
+    right: calc(var(--col) + 64px);
     top: calc(var(--vh) * 0.7);
 }
 
 .hero_image__container {
-    width: 100%;
+    width: var(--vw);
     padding: 160px var(--col) 0;
+    margin: auto;
 
     // TODO
-
     .hero_image__canvas {
         width: calc(70% - 16px);
         // background: var(--gold-soft);
@@ -51,6 +51,4 @@
             // z-index: 20;
         }
     }
-
-
 }

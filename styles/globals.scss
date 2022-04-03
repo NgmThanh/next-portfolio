@@ -8,7 +8,8 @@
   --desktop-margin-grid: 64px;
   --tablet-margin-grid: 32px;
   --mobile-margin-grid: 16px;
-  --vw: calc(100vw - calc(var(--desktop-margin-grid) * 2));
+  --active-margin-grid: calc(var(--desktop-margin-grid));
+  --vw: calc(100vw - var(--active-margin-grid) * 2);
   --vh: 100vh;
   --col: calc(var(--vw) / 12);
 }

@@ -1,5 +1,6 @@
 .works_section {
-    margin: 240px 64px 0;
+    width: var(--vw);
+    margin: 240px auto;
     position: relative;
 
     h2 {    
@@ -51,7 +52,6 @@
 .works_timeline {
     width: calc(var(--col) * 5 - 32px);
     float: right;
-    clear: both;
     margin-top: 320px;
     margin-bottom: 40px;
     display: flex;
