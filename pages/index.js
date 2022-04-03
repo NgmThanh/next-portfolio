@@ -3,10 +3,11 @@ import styles from '../styles/Home.module.scss'
 import Menu from './Menu'
 import Hero from './Hero'
 import Text_separator from './Text_separator'
-import Temporaire from './Temporaire'
 import About from './About'
 import Skills from './Skills'
 import Works from './Works'
+import Contact from './Contact'
+import Footer from './Footer'
 
 export default function Home() {
   return (
@@ -24,12 +25,11 @@ export default function Home() {
         <About/>
         <Skills/>
         <Works/>
-        
-        <Temporaire/>
+        <Contact/>
       </main>
 
       <footer>
-        footer
+        <Footer/>
       </footer>
     </div>
   )

@@ -1,6 +1,7 @@
 :root {
   --black-19: #191B1D;
   --grey-39: #393834;
+  --grey-40: #404248;
   --grey-EA: #eaeaea;
   --gold-pure: #c0995a;
   --gold-soft: #f9f5ef;
@@ -111,6 +112,11 @@ a {
 
 .margin-left-title {
   margin-left: var(--col);
+}
+
+.underline {
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 0px;
 }
 
 .clearfix {

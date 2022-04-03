@@ -28,6 +28,7 @@ export default function Works() {
         </div>
 
         <div className={styles.works_timeline__line}>
+          <div className={styles.works_timeline__line_inner}></div>
         </div>
       </div>
 
