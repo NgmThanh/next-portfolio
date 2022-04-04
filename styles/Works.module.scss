@@ -10,7 +10,7 @@
 
     svg {
         position: absolute;
-        top: 280px;
+        top: 540px;
         right: calc(var(--col) * 1.5);
     }
 }
@@ -20,7 +20,7 @@
     height: 0;
     padding: calc(var(--col) * 4 / 2);
     border-radius: 50%;
-    border: 2px solid var(--gold-pure);
+    border: 2px solid var(--primary);
     position: absolute;
     top: 568px;
     left: var(--col);
@@ -37,7 +37,7 @@
         & > h3 {
             font-weight: 400;
             font-size: 8rem;
-            color: var(--gold-pure);
+            color: var(--primary);
             margin-bottom: 16px;
             display: block;
         }
@@ -85,7 +85,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            background: var(--gold-pure);
+            background: var(--primary);
         }
     }
 }

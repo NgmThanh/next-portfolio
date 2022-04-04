@@ -21,7 +21,7 @@
     &__title {
         font-weight: 450;
         font-size: 2.4rem;
-        color: var(--gold-pure);
+        color: var(--primary);
     }
 
     &__text {
@@ -66,6 +66,7 @@
     display: flex;
     flex-flow: row nowrap;
     flex: 1;
+    gap: 32px;
 
     &__container {
         display: flex;
@@ -76,10 +77,10 @@
     }
 
     &__text_1 {
-        width: calc(var(--col) * 2 - 32px);
+        width: calc(var(--col) * 2);
     }
 
     &__text_2 {
-        width: calc(var(--col) * 2 - 32px);
+        width: calc(var(--col) * 2);
     }
 }
