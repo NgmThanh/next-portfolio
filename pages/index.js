@@ -8,8 +8,57 @@ import Skills from './Skills'
 import Works from './Works'
 import Contact from './Contact'
 import Footer from './Footer'
+import { useEffect } from "react";
+import CircleType from 'circletype';
+
 
 export default function Home() {
+
+  useEffect(() => {
+    /* Circle text */
+    new CircleType(document.getElementById('circleText'));
+
+    /* Locomotive Anchor Scroll */
+    const anchorLinks = document.querySelectorAll('a[href^=\\#]:not([href$=\\#])');
+
+    anchorLinks.forEach((anchorLink) => {
+      let hashval = anchorLink.getAttribute('href');
+      let target = document.querySelector(hashval);
+
+      anchorLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        window.locomotive.scrollTo(target);
+      });
+    });
+
+    /* Locomotive Scroll */
+    ; (async () => {
+      try {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default
+        const dataScrollContainer = document.querySelector('[data-scroll-container]')
+
+        if (!dataScrollContainer) {
+          console.warn(
+            'locomotive-scroll: [data-scroll-container] dataset was not found. You likely forgot to add it which will prevent Locomotive Scroll to work.',
+          )
+        }
+
+        window.locomotive = new LocomotiveScroll({
+          el: dataScrollContainer ?? undefined,
+          smooth: true,
+          multiplier: 0.4,
+          lerp: 0.04,
+        })
+      } catch (error) { }
+    })()
+
+    return () => {
+      window.locomotive?.destroy()
+    }
+  }, [])
+
   return (
     <div>
       <Head>
@@ -18,19 +67,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <Menu/>
-        <Hero/>
-        <Text_separator/>
-        <About/>
-        <Skills/>
-        <Works/>
-        <Contact/>
-      </main>
+      <Menu />
+      <div id="circleText" className={styles.circle_text}>&#x200b; SCROLL TO EXPLORE — SCROLL TO EXPLORE —</div>
 
-      <footer>
-        <Footer/>
-      </footer>
+      <div data-scroll-container>
+        <main className={styles.main}>
+          <Hero />
+          <Text_separator />
+          <About />
+          <Skills />
+          <Works />
+          <Contact />
+        </main>
+
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </div>
   )
 }

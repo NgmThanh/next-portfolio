@@ -21,6 +21,8 @@ export default function Menu() {
     }    
   }, []);
 
+  // TODO : MENU BEHAVIOR
+
   return (
     <div id={'menu'} className={styles.menu}>
       <div>Minh <span className={'gold'}>Thanh</span></div>
