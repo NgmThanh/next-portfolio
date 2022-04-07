@@ -1,12 +1,13 @@
 .main {
   background: var(--black-19);
+  overflow: hidden;
 }
 
 .circle_text {
   font-size: 1.4rem;
   letter-spacing: 0.08em;
   position: fixed;
-  right: calc(64px + 93px);
+  right: calc(64px + 69px);
   bottom: 48px;
   z-index: 999;
   animation: rotate 10s linear infinite;

@@ -48,8 +48,8 @@ export default function Home() {
         window.locomotive = new LocomotiveScroll({
           el: dataScrollContainer ?? undefined,
           smooth: true,
-          multiplier: 0.4,
-          lerp: 0.04,
+          multiplier: 0.8,
+          lerp: 0.1,
         })
       } catch (error) { }
     })()

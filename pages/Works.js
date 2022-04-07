@@ -1,5 +1,5 @@
 import styles from '../styles/Works.module.scss'
-import Works_slider from './Works_slider'
+import Works_carousel from './Works_carousel'
 
 export default function Works() {
   return (
@@ -21,7 +21,7 @@ export default function Works() {
         </div>
       </div>
 
-      <div className={styles.works_timeline}>
+      {/* <div className={styles.works_timeline}>
         <div className={styles.works_timeline__date}>
           <p>2022</p>
           <p>2019</p>
@@ -30,11 +30,11 @@ export default function Works() {
         <div className={styles.works_timeline__line}>
           <div className={styles.works_timeline__line_inner}></div>
         </div>
-      </div>
+      </div> */}
 
       <div className={'clearfix'}></div>
 
-      <Works_slider />
+      <Works_carousel />
     </section>
   )
 }

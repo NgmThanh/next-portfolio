@@ -1,5 +1,4 @@
 import styles from '../styles/Hero.module.scss'
-import React, { useEffect } from "react";
 
 export default function Hero() {
 
