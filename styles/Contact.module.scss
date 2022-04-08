@@ -1,22 +1,4 @@
 .contact_section {
     width: var(--vw);
-    height: calc(var(--vh) - 70px);
     margin: auto;
-    padding-top: calc(var(--vh) * 0.5 - 20rem);
-
-    &__title {
-        margin-left: var(--col);
-    }
-
-    &__description {
-        max-width: calc(var(--col) * 3 - 32px);
-        margin: 64px calc(var(--col) * 4) 0;
-        display: block;
-    }
-
-    svg {
-        float: right;
-        margin-right: calc(var(--col)* 2);
-        margin-top: calc(-1 * var(--col));
-    }
 }

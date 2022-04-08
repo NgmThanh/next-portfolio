@@ -1,97 +1,51 @@
 .works_section {
     width: 100%;
-    padding: 240px 0 80px;
+    margin-bottom: 164px;
+}
+
+.works_content {
+    width: var(--vw);
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.works_grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, minmax(calc(var(--col) * 4), 1fr));
     position: relative;
 
-    .works_title {
-        width: var(--vw);
-        margin: auto;
-
-        h2 {
-            margin-left: var(--col);
-        }
-
-        svg {
-            position: absolute;
-            top: 540px;
-            left: calc(var(--col) * 5);
-        }
-    }
-}
-
-.works_circle {
-    width: calc(var(--col) * 4);
-    height: 0;
-    padding: calc(var(--col) * 4 / 2);
-    border-radius: 50%;
-    border: 2px solid var(--primary);
-    position: absolute;
-    top: 400px;
-    right: var(--col);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    pointer-events: none;
-
-    &__inner {
+    &__item {
+        width: 100%;
         display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
+        flex-flow: column nowrap;
 
-        &>h3 {
-            font-weight: 400;
-            font-size: 8rem;
-            color: var(--primary);
-            margin-bottom: 16px;
-            display: block;
+        &__canvas {
+            width: 100%;
+            height: 600px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
-        &>p {
-            text-transform: uppercase;
-            display: block;
-            white-space: nowrap;
+        &__title {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 2.4rem;
+            color: var(--light-primary);
+            margin-top: 40px;
+        }
+
+        &__description {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--text-light);
+            margin: 8px 0 48px;
         }
     }
 }
-
-// .works_timeline {
-//     width: calc(var(--col) * 5 - 32px);
-//     float: right;
-//     margin-top: 320px;
-//     margin-bottom: 40px;
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: flex-start;
-//     flex-flow: column nowrap;
-//     position: relative;
-
-//     &__date {
-//         width: 100%;
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: flex-start;
-//         margin-bottom: 16px;
-
-//         p {
-//             display: block;
-//         }
-//     }
-
-//     &__line {
-//         width: 100%;
-//         height: 4px;
-//         background: var(--grey-40);
-//         position: relative;
-
-//         &_inner {
-//             width: 70%;
-//             height: 100%;
-//             position: absolute;
-//             left: 0;
-//             top: 0;
-//             background: var(--primary);
-//         }
-//     }
-// }

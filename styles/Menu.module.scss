@@ -1,22 +1,29 @@
 .menu {
     width: 100%;
-    letter-spacing: 0.08em;
-    font-weight: 400;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    padding: 48px var(--active-margin-grid);
-    background: var(--black-19);
-    display: flex;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 99999;
+    background: var(--dark-primary);
+    color: var(--light-primary);
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 2.4rem;
+    text-transform: uppercase;
     transition: all 0.3s ease;
+
+    &__inner {
+        width: var(--vw);
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 48px 0 32px;
+        border-bottom: 1px solid var(--neutral-secondary);
+    }
 
     ul {
         display: flex;
-        gap: 80px;
+        gap: 64px;
 
         li {
             list-style-type: none;

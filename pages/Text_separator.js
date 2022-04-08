@@ -11,7 +11,7 @@ export default function Text_separator() {
       </div>
 
       <div className={styles.text_separator__container}>
-      <span className={styles.text_separator__scroll_2}>
+        <span className={styles.text_separator__scroll_2}>
           <span className={'title'}>CREATIVE — DIGITAL — DESIGN — </span>
           <span className={'title'}>CREATIVE — DIGITAL — DESIGN — </span>
         </span>

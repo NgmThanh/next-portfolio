@@ -9,35 +9,21 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding: calc(var(--vh) * 0.5 - (20rem)) var(--col) 0;
-}
-
-.hero_subtitle {
-    font-size: 1.6rem;
-    letter-spacing: 0.08em;
-    display: block;
-    margin-bottom: 16px;
+    padding: calc(var(--vh) * 0.5 - (20rem)) 0 0;
 }
 
 .hero_description {
-    width: calc(var(--col) * 4 - 32px);
-    margin: 120px calc(var(--col)) 0;
-}
-
-.welcome {
-    position: absolute;
-    right: calc(var(--col) + 64px);
-    top: calc(var(--vh) * 0.65);
+    width: calc(var(--col) * 4);
 }
 
 .hero_image {
     width: var(--vw);
-    padding: 160px var(--col) 0;
+    padding: 94px 0 0 calc(var(--col) * 2);
     margin: auto;
     position: relative;
 
     &__canvas {
-        width: calc(var(--col) * 7 - 32px);
+        width: calc(var(--col) * 7);
 
         img {
             width: 100%;
@@ -52,7 +38,7 @@
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    background: var(--primary);
+    background: var(--grey-1);
     position: absolute;
     top: 60%;
     right: calc(var(--col) * 2);

@@ -11,27 +11,27 @@ export default function Menu() {
     window.onscroll = () => {
       let currentScrollPos = window.pageYOffset;
 
-      if (prevScrollpos > currentScrollPos || window.innerHeight + window.pageYOffset >= document.body.offsetHeight-1) {
+      if (prevScrollpos > currentScrollPos || window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 1) {
         menu.style.top = "0";
       } else {
-        menu.style.top = "-117px";
+        menu.style.top = "-116px";
       }
-      
-      prevScrollpos = currentScrollPos;
-    }    
-  }, []);
 
-  // TODO : MENU BEHAVIOR
+      prevScrollpos = currentScrollPos;
+    }
+  }, []);
 
   return (
     <div id={'menu'} className={styles.menu}>
-      <div>Minh <span className={'gold'}>Thanh</span></div>
-      <ul>
-        <li><a href={'#home'}>Home</a></li>
-        <li><a id="aboutButton" href={'#about'}>About</a></li>
-        <li><a id="projectButton" href={'#works'}>Projects</a></li>
-        <li><a id="contactButton" href={'#contact'}>Contact</a></li>
-      </ul>
+      <div className={styles.menu__inner}>
+        <div><span>Minh Thanh</span></div>
+        <ul>
+          <li><a href={'#home'}>Home</a></li>
+          <li><a id="aboutButton" href={'#about'}>About</a></li>
+          <li><a id="projectButton" href={'#works'}>Projects</a></li>
+          <li><a id="contactButton" href={'#contact'}>Contact</a></li>
+        </ul>
+      </div>
     </div>
   )
 }
