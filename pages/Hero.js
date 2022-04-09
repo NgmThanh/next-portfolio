@@ -1,9 +1,11 @@
 import styles from '../styles/Hero.module.scss'
+import { Icon } from '@iconify/react';
+import arrowDownRight from '@iconify/icons-carbon/arrow-down-right';
 
 export default function Hero() {
 
   return (
-    <section id="home" className={styles.hero_section}>
+    <section id='home' className={styles.hero_section}>
       <div className={styles.hero_title__container}>
         <div className={'side-grid-layout'}>
           <span className={'side-title'}>Digital</span>
@@ -12,9 +14,15 @@ export default function Hero() {
           </h1>
         </div>
 
+        <a href='#homeContent'>
+          <div className={'arrow-button'}>
+            <Icon icon={arrowDownRight} />
+          </div>
+        </a>
+
         <div className={'bg-title'}>Digital</div>
 
-        <div className={'side-grid-layout border-top'}>
+        <div id='homeContent' className={'side-grid-layout border-top'}>
           <span className={'side-title'}>Introduction</span>
           <div className={styles.hero_description}>
             <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>

@@ -1,8 +1,10 @@
 import styles from '../styles/Works.module.scss'
+import { Icon } from '@iconify/react';
+import arrowDownRight from '@iconify/icons-carbon/arrow-down-right';
 
 export default function Works() {
   return (
-    <section id="works" className={styles.works_section}>
+    <section id='works' className={styles.works_section}>
       <div className={styles.works_title + ' border-top'}>
         <div className={'side-grid-layout'}>
           <span className={'side-title'}>Projects</span>
@@ -11,49 +13,61 @@ export default function Works() {
           </h2>
         </div>
 
+        <a href='#worksContent'>
+          <div className={'arrow-button'}>
+            <Icon icon={arrowDownRight} />
+          </div>
+        </a>
         <div className={'bg-title'}>WORKS</div>
       </div>
 
-      <div className={'border-top'}></div>
       <div className={'clearfix'}></div>
 
-      <div className={styles.works_content}>
+      <div id='worksContent' className={styles.works_content + ' border-top'}>
         <div className={'side-grid-layout'}>
           <span className={'side-title'}>Projects</span>
         </div>
 
         <div className={styles.works_grid}>
-          <div className={styles.works_grid__item}>
-            <div className={styles.works_grid__item__canvas}>
-              <img src='/about-image.jpg' alt='about image' />
+          <a href='#'>
+            <div className={styles.works_grid__item}>
+              <div className={styles.works_grid__item__canvas}>
+                <img src='/works-assistant.jpg' alt='work illustration' />
+              </div>
+              <div className={styles.works_grid__item__title}>HD Assistante</div>
+              <div className={styles.works_grid__item__description}>Web Design</div>
             </div>
-            <div className={styles.works_grid__item__title}>HD Assistante</div>
-            <div className={styles.works_grid__item__description}>Web Design</div>
-          </div>
+          </a>
 
-          <div className={styles.works_grid__item}>
-            <div className={styles.works_grid__item__canvas}>
-              <img src='/about-image.jpg' alt='about image' />
+          <a href='#'>
+            <div className={styles.works_grid__item}>
+              <div className={styles.works_grid__item__canvas}>
+                <img src='/works-design-1.jpg' alt='work illustration' />
+              </div>
+              <div className={styles.works_grid__item__title}>HD Assistante</div>
+              <div className={styles.works_grid__item__description}>Web Design</div>
             </div>
-            <div className={styles.works_grid__item__title}>HD Assistante</div>
-            <div className={styles.works_grid__item__description}>Web Design</div>
-          </div>
+          </a>
 
-          <div className={styles.works_grid__item}>
-            <div className={styles.works_grid__item__canvas}>
-              <img src='/about-image.jpg' alt='about image' />
+          <a href='#'>
+            <div className={styles.works_grid__item}>
+              <div className={styles.works_grid__item__canvas}>
+                <img src='/works-design-2.jpg' alt='work illustration' />
+              </div>
+              <div className={styles.works_grid__item__title}>HD Assistante</div>
+              <div className={styles.works_grid__item__description}>Web Design</div>
             </div>
-            <div className={styles.works_grid__item__title}>HD Assistante</div>
-            <div className={styles.works_grid__item__description}>Web Design</div>
-          </div>
+          </a>
 
-          <div className={styles.works_grid__item}>
-            <div className={styles.works_grid__item__canvas}>
-              <img src='/about-image.jpg' alt='about image' />
+          <a href='#'>
+            <div className={styles.works_grid__item}>
+              <div className={styles.works_grid__item__canvas}>
+                <img src='/works-real-estate.jpg' alt='work illustration' />
+              </div>
+              <div className={styles.works_grid__item__title}>HD Assistante</div>
+              <div className={styles.works_grid__item__description}>Web Design</div>
             </div>
-            <div className={styles.works_grid__item__title}>HD Assistante</div>
-            <div className={styles.works_grid__item__description}>Web Design</div>
-          </div>
+          </a>
         </div>
       </div>
     </section>

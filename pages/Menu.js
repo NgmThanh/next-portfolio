@@ -14,7 +14,7 @@ export default function Menu() {
       if (prevScrollpos > currentScrollPos || window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 1) {
         menu.style.top = "0";
       } else {
-        menu.style.top = "-116px";
+        menu.style.top = "-117px";
       }
 
       prevScrollpos = currentScrollPos;

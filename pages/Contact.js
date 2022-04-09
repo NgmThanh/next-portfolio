@@ -1,4 +1,6 @@
 import styles from '../styles/Contact.module.scss'
+import { Icon } from '@iconify/react';
+import arrowRight from '@iconify/icons-carbon/arrow-right';
 
 export default function Contact() {
   return (
@@ -11,10 +13,13 @@ export default function Contact() {
           </h2>
         </div>
 
+        <a href="mailto:nmthanh99@gmail.com">
+          <div className={'arrow-button'}>
+            <Icon icon={arrowRight} />
+          </div>
+        </a>
         <div className={'bg-title'}>TOUCH</div>
       </div>
-
-      <div className={'border-top'}></div>
     </section>
   )
 }

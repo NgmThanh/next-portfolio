@@ -1,8 +1,10 @@
 import styles from '../styles/About.module.scss'
+import { Icon } from '@iconify/react';
+import arrowDownRight from '@iconify/icons-carbon/arrow-down-right';
 
 export default function About() {
   return (
-    <section id="about" className={styles.about_section}>
+    <section id='about' className={styles.about_section}>
       <div className={styles.about_title + ' border-top'}>
         <div className={'side-grid-layout'}>
           <span className={'side-title'}>Explore</span>
@@ -11,12 +13,16 @@ export default function About() {
           </h2>
         </div>
 
+        <a href='#aboutContent'>
+          <div className={'arrow-button'}>
+            <Icon icon={arrowDownRight} />
+          </div>
+        </a>
+
         <div className={'bg-title'}>About</div>
       </div>
 
-      <div className={'border-top'}></div>
-
-      <div className={styles.about_description}>
+      <div id='aboutContent' className={styles.about_description + ' border-top'}>
         <div className={'side-grid-layout'}>
           <span className={'side-title'}>Career</span>
           <div className={styles.about_heading}>
@@ -66,7 +72,7 @@ export default function About() {
         </div>
 
         <div className={styles.about_illustration__canvas_2}>
-          <img src='/about-image.jpg' alt='about image' />
+          <img src='/about-development.jpg' alt='about image' />
         </div>
 
         <div className={'clearfix'}></div>

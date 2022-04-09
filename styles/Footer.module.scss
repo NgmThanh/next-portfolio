@@ -1,15 +1,17 @@
 
 .footer_section {
-    padding-bottom: 48px;
+    width: var(--vw);
+    margin: auto;
+    padding: 48px 0 56px;
+    border-top: 1px solid var(--neutral-secondary);
 
     ul {
-        margin-left: var(--active-margin-grid);
         display: flex;
-        gap: 40px;
+        gap: 64px;
 
         li {
-            font-family: 'Inter';
-            font-weight: 500;
+            font-family: 'Poppins';
+            font-weight: 400;
             font-size: 2.4rem;
             text-transform: uppercase;
             list-style-type: none;
