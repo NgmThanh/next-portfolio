@@ -1,7 +1,8 @@
 :root {
   --dark-primary: #171719;
   --dark-secondary: #262628;
-  --neutral-primary: #979B99;
+
+  --neutral-primary: #C19A5B;
   // --neutral-primary: #C19A5B;
   --neutral-secondary: #5C5C5E;
   --light-primary: #fff;
@@ -104,6 +105,7 @@ body {
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
+  cursor: none;
 
   &::selection {
     background: var(--neutral-secondary);
@@ -143,42 +145,29 @@ a {
 
 /* ========== CURSOR ========== */
 
-.cursor, .cursor--inner {
+.cursor {
   position: fixed;
-  width: 45px; height: 45px;
-  border: 1.25px solid var(--neutral-secondary);
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  transition: 0.15s var(--custom-ease-out);
-  margin-top: -22.5px;
-  margin-left: -22.5px;
+  background: var(--neutral-primary);
   z-index: 10000;
   pointer-events: none;
-  transform: translate3d(0, 0, 0);
-
-  @include tablet-screen {
-      display: none;
-  }
 }
 
-.cursor--inner {
-  width: 5px; height: 5px;
+.follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  margin-top: -2.5px;
-  margin-left: -2.5px;
-  border: none;
-  background-color: var(--light-primary);
-}
-
-.cursor-focus {
-  width: 70px; height: 70px;
-  border-radius: 50%;
-  background-color: var(--neutral-secondary);
-  opacity: .75;
   z-index: 9999;
-  margin-top: -35px;
-  margin-left: -35px;
-  border: none;
-  transform: translate3d(0, 0, 0);
+  background: var(--neutral-secondary);
+  opacity: .7 !important;
+  pointer-events: none;
 }
 
 .italic {
@@ -216,7 +205,7 @@ a {
 
 .is-sticky {
   position: sticky;
-  top: 4vh;
+  top: 8vh;
   z-index: 100;
 }
 
@@ -229,7 +218,7 @@ a {
 
 .side-title {
   font-size: 1.6rem;
-  color: var(--light-primary);
+  color: var(--neutral-primary);
   width: calc(var(--col) * 2 - 32px);
 }
 

@@ -8,21 +8,20 @@ import Works from './Works'
 import Contact from './Contact'
 import Footer from './Footer'
 import React, { useEffect } from 'react'
-
+import { gsap } from "gsap";
 
 export default function Home() {
 
   useEffect(() => {
-    var cursor = document.querySelector('.cursor');
-    var innerCursor = document.querySelector('.cursor--inner');
+    gsap.set('.cursor', { xPercent: -50, yPercent: -50 });
+    gsap.set('.follower', { xPercent: -50, yPercent: -50 });
 
-    document.addEventListener('mousemove', function (c) {
-      var x = c.clientX;
-      var y = c.clientY;
-      cursor.style.left = x + "px";
-      cursor.style.top = y + "px";
-      innerCursor.style.left = x + "px";
-      innerCursor.style.top = y + "px";
+    var cur = document.querySelector('.cursor');
+    var follow = document.querySelector('.follower');
+
+    window.addEventListener('mousemove', e => {
+      gsap.to(cur, 0.1, { x: e.clientX, y: e.clientY });
+      gsap.to(follow, .6, { x: e.clientX, y: e.clientY });
     });
   })
 
@@ -37,7 +36,7 @@ export default function Home() {
       <Menu />
 
       <div id="cursor" className="cursor"></div>
-      <div className="cursor--inner"></div>
+      <div className="follower"></div>
 
       <main className={styles.main}>
         <Hero />

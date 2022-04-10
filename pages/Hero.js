@@ -21,18 +21,19 @@ export default function Hero() {
         </a>
 
         <div className={'bg-title'}>Digital</div>
+      </div>
 
-        <div id='homeContent' className={'side-grid-layout border-top'}>
-          <span className={'side-title'}>Introduction</span>
+      <div id='homeContent' className={'side-grid-layout border-top'}>
+        <span className={'side-title is-sticky'}>Introduction</span>
+        <div>
           <div className={styles.hero_description}>
             <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
           </div>
-        </div>
-      </div>
-
-      <div className={styles.hero_image}>
-        <div className={styles.hero_image__canvas}>
-          <img src='/hero-image.png' alt='hero image' />
+          <div className={styles.hero_image}>
+            <div className={styles.hero_image__canvas}>
+              <img src='/hero-image.png' alt='hero image' />
+            </div>
+          </div>
         </div>
       </div>
     </section>
