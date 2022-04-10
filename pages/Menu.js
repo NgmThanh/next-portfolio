@@ -24,7 +24,7 @@ export default function Menu() {
   return (
     <div id={'menu'} className={styles.menu}>
       <div className={styles.menu__inner}>
-        <div><span>Minh Thanh</span></div>
+        <div><span>Minh&nbsp;</span><span className={'italic title-colored'}>Thanh</span></div>
         <ul>
           <li><a href={'#home'}>Home</a></li>
           <li><a id="aboutButton" href={'#about'}>About</a></li>

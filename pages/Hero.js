@@ -34,10 +34,6 @@ export default function Hero() {
         <div className={styles.hero_image__canvas}>
           <img src='/hero-image.png' alt='hero image' />
         </div>
-
-        <div className={styles.hero_button}>
-          {/* TODO <FontAwesomeIcon icon="fa-light fa-arrow-down" /> */}
-        </div>
       </div>
     </section>
   )
