@@ -8,6 +8,10 @@
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
+
+    &__icon {
+        margin-top: 40px;
+    }
 }
 
 .works_grid {

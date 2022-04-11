@@ -1,6 +1,7 @@
 import styles from '../styles/Hero.module.scss'
 import { Icon } from '@iconify/react';
 import arrowDownRight from '@iconify/icons-carbon/arrow-down-right';
+import arrowDown from '@iconify/icons-carbon/arrow-down';
 
 export default function Hero() {
 
@@ -32,6 +33,10 @@ export default function Hero() {
           <div className={styles.hero_image}>
             <div className={styles.hero_image__canvas}>
               <img src='/hero-image.png' alt='hero image' />
+            </div>
+
+            <div className={'arrow-icon is-sticky ' + styles.hero_image__icon}>
+              <Icon icon={arrowDown} />
             </div>
           </div>
         </div>

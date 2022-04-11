@@ -25,7 +25,12 @@ export default function Works() {
 
       <div id='worksContent' className={styles.works_content + ' border-top'}>
         <div className={'side-grid-layout'}>
-          <span className={'side-title is-sticky'}>Projects</span>
+          <div className={'side-title is-sticky'}>
+            <span>Projects</span>
+            <div className={'arrow-icon ' + styles.works_content__icon}>
+              <Icon icon={arrowDownRight} />
+            </div>
+          </div>
         </div>
 
         <div className={styles.works_grid}>

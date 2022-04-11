@@ -25,10 +25,13 @@ export default function About() {
       <div id='aboutContent' className={styles.about_description + ' border-top'}>
         <div className={'side-grid-layout'}>
           <span className={'side-title is-sticky'}>Career</span>
-          <div className={styles.about_heading + ' is-sticky'}>
+          <div className={styles.about_description__heading + ' is-sticky'}>
             <h3><span className={'italic-subtitle'}>My designer career</span></h3>
             <h3><span className={'subtitle'}>Graduate in HCI</span></h3>
             <p className={styles.about_description__text}>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
+            <div className={'arrow-icon ' + styles.about_description__icon}>
+              <Icon icon={arrowDownRight} />
+            </div>
           </div>
         </div>
 

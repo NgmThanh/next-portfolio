@@ -18,11 +18,11 @@
     flex-flow: row nowrap;
     justify-content: space-between;
 
-    .about_heading {
+    &__heading {
         max-width: calc(var(--col) * 4);
     }
 
-    &__text {
+    &__icon, &__text {
         margin-top: 40px;
     }
 

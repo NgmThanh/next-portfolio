@@ -33,10 +33,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Menu />
-
       <div id="cursor" className="cursor"></div>
       <div className="follower"></div>
+      
+      <Menu />
 
       <main className={styles.main}>
         <Hero />
