@@ -9,7 +9,7 @@ export default function Hero() {
     <section id='home' className={styles.hero_section}>
       <div className={styles.hero_title__container}>
         <div className={'side-grid-layout'}>
-          <span className={'side-title'}>Digital</span>
+          <span className={'side-title col-2'}>Digital</span>
           <h1 className={'title'}>
             <span>I make</span><br></br><span className={'italic title-colored'}>creative</span><span>&nbsp;design</span>
           </h1>
@@ -25,17 +25,17 @@ export default function Hero() {
       </div>
 
       <div id='homeContent' className={'side-grid-layout border-top'}>
-        <span className={'side-title is-sticky'}>Introduction</span>
+        <span className={'side-title is-sticky col-2'}>Introduction</span>
         <div>
-          <div className={styles.hero_description}>
+          <div className={styles.hero_description + ' col-4'}>
             <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
           </div>
           <div className={styles.hero_image}>
-            <div className={styles.hero_image__canvas}>
+            <div className={styles.hero_image__canvas + ' col-7'}>
               <img src='/hero-image.png' alt='hero image' />
             </div>
 
-            <div className={'arrow-icon is-sticky ' + styles.hero_image__icon}>
+            <div className={styles.hero_image__icon + ' arrow-icon is-sticky'}>
               <Icon icon={arrowDown} />
             </div>
           </div>

@@ -7,7 +7,7 @@ export default function Works() {
     <section id='works' className={styles.works_section}>
       <div className={styles.works_title + ' border-top'}>
         <div className={'side-grid-layout'}>
-          <span className={'side-title'}>Projects</span>
+          <span className={'side-title col-2'}>Projects</span>
           <h2 className={'title'}>
             <span>Discover<br></br>my&nbsp;</span><span className={'italic title-colored'}>projects</span>
           </h2>
@@ -25,7 +25,7 @@ export default function Works() {
 
       <div id='worksContent' className={styles.works_content + ' border-top'}>
         <div className={'side-grid-layout'}>
-          <div className={'side-title is-sticky'}>
+          <div className={'side-title is-sticky col-2'}>
             <span>Projects</span>
             <div className={'arrow-icon ' + styles.works_content__icon}>
               <Icon icon={arrowDownRight} />

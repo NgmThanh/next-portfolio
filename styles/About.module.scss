@@ -1,10 +1,11 @@
+@import "mixins";
+
 .about_section {
     width: 100%;
+    padding: 0 var(--active-margin-grid);
 }
 
 .about_title {
-    width: var(--vw);
-    margin: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -12,14 +13,13 @@
 }
 
 .about_description {
-    width: var(--vw);
-    margin: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    gap: 48px;
 
     &__heading {
-        max-width: calc(var(--col) * 4);
+        // max-width: calc(var(--col) * 4);
     }
 
     &__icon, &__text {
@@ -27,17 +27,16 @@
     }
 
     &__list {
-        max-width: calc(var(--col) * 4);
         margin-top: 240px;
-        margin-right: calc(var(--col) - 32px);
+        margin-right: var(--col-1);
     }
 
     &__item {
         padding: 64px 0;
         border-bottom: 1px solid var(--neutral-secondary);
         display: grid;
-        gap: 32px;
-        grid-template-columns: repeat(2, minmax(calc(50% - 32px) ,1fr));
+        gap: 24px;
+        grid-template-columns: var(--col-2) 1fr;
 
         &__title {
             font-family: 'Poppins';
@@ -50,13 +49,10 @@
 }
 
 .about_illustration {
-    width: var(--vw);
-    margin: auto;
     margin-top: 160px;
     position: relative;
 
     &__canvas_1, &__canvas_2 {
-        width: calc(var(--col) * 7);
         height: 600px;
         float: right;
         margin-bottom: 144px;
@@ -69,14 +65,14 @@
     }
 
     &__canvas_2 {
-        margin-left: var(--col);
+        margin-left: var(--col-1);
         margin-top: 164px;
         float: left;
     }
 
     &__text_1, &__text_2 {
-        max-width: calc(var(--col) * 4);
-        margin-left: var(--col);
+        max-width: var(--col-4);
+        margin-left: var(--col-1);
 
         h3 {
             font-family: 'Inter';
@@ -91,33 +87,7 @@
     &__text_2 {
         float: right;
         text-align: right;
-        margin-right: var(--col);
+        margin-right: var(--col-1);
         margin-bottom: 164px;
-    }
-}
-
-.about_text {
-    width: calc(var(--col) * 4);
-    margin-left: calc(var(--col) * 3 + var(--active-margin-grid));
-    margin-top: 120px;
-    display: flex;
-    flex-flow: row nowrap;
-    flex: 1;
-    gap: 32px;
-
-    &__container {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: flex-start;
-        flex: 1;
-        min-width: 0;
-    }
-
-    &__text_1 {
-        width: calc(var(--col) * 2);
-    }
-
-    &__text_2 {
-        width: calc(var(--col) * 2);
     }
 }

@@ -1,11 +1,10 @@
 .works_section {
     width: 100%;
     margin-bottom: 164px;
+    padding: 0 var(--active-margin-grid);
 }
 
 .works_content {
-    width: var(--vw);
-    margin: auto;
     display: flex;
     flex-flow: row nowrap;
 
@@ -17,7 +16,7 @@
 .works_grid {
     display: grid;
     gap: 32px;
-    grid-template-columns: repeat(2, minmax(calc(var(--col) * 4), 1fr));
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
 
     &__item {

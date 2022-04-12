@@ -1,54 +1,36 @@
+@import "mixins";
+
 .hero_section {
     width: 100%;
+    padding: 0 var(--active-margin-grid);
 }
 
 .hero_title__container {
-    width: var(--vw);
-    margin: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding: calc(var(--vh) * 0.5 - (16rem)) 0 0;
-}
+    padding-top: 16%;
 
-.hero_description {
-    width: calc(var(--col) * 4);
+    @include tablet-screen() {
+        padding: 200px 0 0;
+    }
 }
 
 .hero_image {
-    margin: 94px auto 0;
+    margin-top: 94px;
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
 
-    &__canvas {
-        width: calc(var(--col) * 7);
-
-        img {
-            width: 100%;
-            max-width: none;
-            height: auto;
-            object-fit: cover;
-        }
+    &__canvas img {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        object-fit: cover;
     }
 
     &__icon {
-        margin-left: var(--col);
+        margin-left: var(--col-1);
     }
-}
-
-.hero_button {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background: var(--grey-1);
-    position: absolute;
-    top: 60%;
-    right: calc(var(--col) * 2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
 }

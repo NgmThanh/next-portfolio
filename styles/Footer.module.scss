@@ -1,9 +1,12 @@
 
 .footer_section {
-    width: var(--vw);
-    margin: auto;
-    padding: 48px 0 56px;
-    border-top: 1px solid var(--neutral-secondary);
+    padding: 0 var(--active-margin-grid) 40px;
+
+    .footer_border {
+        width: 100%;
+        border-top: 1px solid var(--neutral-secondary);
+        padding-top: 40px;
+    }
 
     ul {
         display: flex;

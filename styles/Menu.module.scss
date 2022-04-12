@@ -9,15 +9,14 @@
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 2.4rem;
-    transition: all 0.3s ease;
+    padding: 48px var(--active-margin-grid) 0;
+    transition: all 0.3s var(--custom-ease-in);
 
     &__inner {
-        width: var(--vw);
-        margin: auto;
         display: flex;
         justify-content: space-between;
-        padding: 48px 0 32px;
         border-bottom: 1px solid var(--neutral-secondary);
+        padding-bottom: 32px;
     }
 
     ul {
