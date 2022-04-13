@@ -5,7 +5,8 @@
 // media queries mixins
 $breakpoints: (mobile: 500px,
   tablet: 768px,
-  small-screen: 1024px
+  small-screen: 1024px,
+  large-screen: 1200px,
 );
 
 @mixin mobile-screen {
@@ -22,6 +23,12 @@ $breakpoints: (mobile: 500px,
 
 @mixin small-screen {
   @media screen and (max-width: map-get($breakpoints, small-screen)) {
+    @content;
+  }
+}
+
+@mixin large-screen {
+  @media screen and (max-width: map-get($breakpoints, large-screen)) {
     @content;
   }
 }

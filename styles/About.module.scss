@@ -18,7 +18,7 @@
     justify-content: space-between;
     gap: 48px;
 
-    @include small-screen() {
+    @include large-screen() {
         flex-flow: column nowrap;
         gap: 32px;
     }
@@ -26,11 +26,7 @@
     @include mobile-screen() {
         gap: 16px;
     }
-
-    &__heading {
-        // max-width: calc(var(--col) * 4);
-    }
-
+    
     &__icon,
     &__text {
         margin-top: 40px;
@@ -48,7 +44,7 @@
         margin-top: 240px;
         margin-right: var(--col-1);
 
-        @include small-screen() {
+        @include large-screen() {
             margin: 0;
         }
     }
@@ -60,8 +56,13 @@
         gap: 24px;
         grid-template-columns: var(--col-2) 1fr;
 
+        @include large-screen() {
+            grid-template-columns: var(--col-4) var(--col-4);
+            float: right;
+        }
+
         @include small-screen() {
-            grid-template-columns: var(--col-4) 1fr;
+            grid-template-columns: 1fr 1fr;
         }
 
         @include tablet-screen() {
@@ -140,6 +141,10 @@
     &__text_2 {
         max-width: var(--col-4);
         margin-left: var(--col-1);
+
+        @include large-screen() {
+            max-width: var(--col-7);
+        }
 
         @include small-screen() {
             max-width: none;

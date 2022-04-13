@@ -60,6 +60,10 @@
             height: 600px;
             overflow: hidden;
 
+            @include large-screen() {
+                height: 440px;
+            }
+
             @include small-screen() {
                 height: 400px;
             }
