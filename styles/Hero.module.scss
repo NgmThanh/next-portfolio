@@ -10,11 +10,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 16%;
-
-    @include tablet-screen() {
-        padding: 200px 0 0;
-    }
+    padding-top: clamp(240px, 16%, 400px);
 }
 
 .hero_image {
@@ -23,14 +19,44 @@
     display: flex;
     align-items: flex-start;
 
-    &__canvas img {
-        width: 100%;
-        max-width: none;
-        height: auto;
-        object-fit: cover;
+    @include small-screen() {
+        margin-top: 64px;
+    }
+
+    @include mobile-screen() {
+        margin-top: 48px;
+    }
+
+    &__canvas {
+        @include tablet-screen() {
+            max-height: 400px;
+        }
+
+        @include tablet-screen() {
+            max-height: 320px;
+        }
+
+        img {
+            width: 100%;
+            max-width: none;
+            height: auto;
+            object-fit: cover;
+
+            @include tablet-screen() {
+                max-height: 400px;
+            }
+
+            @include tablet-screen() {
+                max-height: 320px;
+            }
+        }
     }
 
     &__icon {
         margin-left: var(--col-1);
+
+        @include small-screen() {
+            display: none;
+        }
     }
 }

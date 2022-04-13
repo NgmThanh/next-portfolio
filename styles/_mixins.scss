@@ -5,7 +5,7 @@
 // media queries mixins
 $breakpoints: (mobile: 500px,
   tablet: 768px,
-  small-screen: 992px
+  small-screen: 1024px
 );
 
 @mixin mobile-screen {

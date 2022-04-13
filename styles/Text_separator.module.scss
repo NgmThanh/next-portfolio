@@ -1,6 +1,16 @@
+@import "mixins";
+
 .text_separator_section {
     width: 100%;
     margin: 160px 0 160px;
+
+    @include small-screen() {
+        margin: 80px 0 80px;
+    }
+
+    @include mobile-screen() {
+        margin: 64px 0 64px;
+    }
 
     .text_separator__container {
         overflow: hidden;

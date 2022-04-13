@@ -18,17 +18,39 @@
     justify-content: space-between;
     gap: 48px;
 
+    @include small-screen() {
+        flex-flow: column nowrap;
+        gap: 32px;
+    }
+
+    @include mobile-screen() {
+        gap: 16px;
+    }
+
     &__heading {
         // max-width: calc(var(--col) * 4);
     }
 
-    &__icon, &__text {
+    &__icon,
+    &__text {
         margin-top: 40px;
+
+        @include small-screen() {
+            margin-top: 32px;
+        }
+
+        @include mobile-screen() {
+            margin-top: 24px;
+        }
     }
 
     &__list {
         margin-top: 240px;
         margin-right: var(--col-1);
+
+        @include small-screen() {
+            margin: 0;
+        }
     }
 
     &__item {
@@ -37,6 +59,18 @@
         display: grid;
         gap: 24px;
         grid-template-columns: var(--col-2) 1fr;
+
+        @include small-screen() {
+            grid-template-columns: var(--col-4) 1fr;
+        }
+
+        @include tablet-screen() {
+            grid-template-columns: 1fr;
+        }
+
+        @include mobile-screen() {
+            padding: 40px 0;
+        }
 
         &__title {
             font-family: 'Poppins';
@@ -52,10 +86,33 @@
     margin-top: 160px;
     position: relative;
 
-    &__canvas_1, &__canvas_2 {
+    @include small-screen() {
+        margin-top: 80px;
+    }
+
+    @include mobile-screen() {
+        margin-top: 64px;
+    }
+
+    &__canvas_1,
+    &__canvas_2 {
         height: 600px;
         float: right;
         margin-bottom: 144px;
+
+        @include small-screen() {
+            height: 400px;
+            margin-bottom: 64px;
+        }
+
+        @include tablet-screen() {
+            height: 320px;
+            margin-bottom: 64px;
+        }
+
+        @include mobile-screen() {
+            margin-bottom: 48px;
+        }
 
         img {
             width: 100%;
@@ -68,11 +125,26 @@
         margin-left: var(--col-1);
         margin-top: 164px;
         float: left;
+
+        @include small-screen() {
+            margin-top: 80px;
+            margin-left: 0;
+        }
+
+        @include mobile-screen() {
+            margin-top: 64px;
+        }
     }
 
-    &__text_1, &__text_2 {
+    &__text_1,
+    &__text_2 {
         max-width: var(--col-4);
         margin-left: var(--col-1);
+
+        @include small-screen() {
+            max-width: none;
+            margin-left: 0;
+        }
 
         h3 {
             font-family: 'Inter';
@@ -81,6 +153,15 @@
             color: var(--light-primary);
             text-transform: uppercase;
             margin-bottom: 48px;
+
+            @include small-screen() {
+                margin-bottom: 32px;
+            }
+
+            @include mobile-screen() {
+                font-size: 2.4rem;
+                margin-bottom: 24px;
+            }
         }
     }
 
@@ -89,5 +170,15 @@
         text-align: right;
         margin-right: var(--col-1);
         margin-bottom: 164px;
+
+        @include small-screen() {
+            text-align: left;
+            margin-right: 0;
+            margin-bottom: 80px;
+        }
+
+        @include mobile-screen() {
+            margin-bottom: 64px;
+        }
     }
 }

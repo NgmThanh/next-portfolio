@@ -1,3 +1,5 @@
+@import "mixins";
+
 .menu {
     width: 100%;
     position: fixed;
@@ -12,16 +14,36 @@
     padding: 48px var(--active-margin-grid) 0;
     transition: all 0.3s var(--custom-ease-in);
 
+    @include small-screen() {
+        padding-top: 32px;
+    }
+
+    @include tablet-screen() {
+        padding-top: 24px;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid var(--neutral-secondary);
         padding-bottom: 32px;
+
+        @include small-screen() {
+            padding-bottom: 24px;
+        }
+
+        @include mobile-screen() {
+            padding-bottom: 16px;
+        }
     }
 
     ul {
         display: flex;
         gap: 64px;
+
+        @include tablet-screen() {
+            display: none;
+        }
 
         li {
             text-transform: uppercase;

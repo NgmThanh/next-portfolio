@@ -9,9 +9,14 @@
   --text-light: #767676;
   --active-margin-grid: 48px;
 
-  @include tablet-screen() {
+  @include small-screen() {
     --active-margin-grid: 32px;
   }
+
+  @include tablet-screen() {
+    --active-margin-grid: 24px;
+  }
+
   @include mobile-screen() {
     --active-margin-grid: 16px;
   }
@@ -45,7 +50,7 @@ body {
   scroll-behavior: smooth;
   background: var(--dark-primary);
   font-family: 'Inter', Roboto, sans-serif;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 * {
@@ -70,6 +75,10 @@ h3>.subtitle {
   font-weight: 600;
   color: var(--light-primary);
   text-transform: uppercase;
+
+  @include mobile-screen() {
+    font-size: 4rem;
+  }
 }
 
 h3>.italic-subtitle {
@@ -78,12 +87,21 @@ h3>.italic-subtitle {
   font-size: 4.8rem;
   color: var(--light-primary);
   font-weight: 400;
+
+  @include mobile-screen() {
+    font-size: 4rem;
+  }
 }
 
 p {
   font-size: 1.8rem;
   line-height: 28px;
   color: var(--text-light);
+
+  @include mobile-screen() {
+    font-size: 1.6rem;
+    line-height: 26px;
+  }
 }
 
 a {
@@ -103,6 +121,10 @@ a {
   background: var(--neutral-primary);
   z-index: 10000;
   pointer-events: none;
+
+  @include tablet-screen() {
+    display: none;
+  }
 }
 
 .follower {
@@ -116,6 +138,10 @@ a {
   background: var(--neutral-secondary);
   opacity: .7 !important;
   pointer-events: none;
+
+  @include tablet-screen() {
+    display: none;
+  }
 }
 
 .italic {
@@ -138,14 +164,11 @@ a {
   font-family: 'Poppins';
   font-weight: 600;
   font-size: 7.6vw;
+  font-size: clamp(4.8rem, 7.6vw, 20rem);
   line-height: 110%;
   letter-spacing: -0.04em;
   color: var(--light-primary);
   z-index: 1;
-
-  @include tablet-screen() {
-    font-size: 10vw;
-  }
 }
 
 .bg-title {
@@ -162,6 +185,14 @@ a {
   width: 100%;
   border-top: 1px solid var(--neutral-secondary);
   padding-top: 80px;
+
+  @include small-screen() {
+    padding-top: 64px;
+  }
+
+  @include mobile-screen() {
+    padding-top: 48px;
+  }
 }
 
 .is-sticky {
@@ -174,6 +205,11 @@ a {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
+
+  @include small-screen() {
+    flex-flow: column nowrap;
+    gap: 24px;
+  }
 }
 
 .side-title {
@@ -182,7 +218,8 @@ a {
   margin-right: 32px;
 }
 
-.arrow-icon, .arrow-icon-45deg {
+.arrow-icon,
+.arrow-icon-45deg {
   font-size: 12rem;
   color: var(--light-primary);
   display: flex;
@@ -227,6 +264,10 @@ a {
 
   &:hover {
     color: var(--dark-primary);
+  }
+
+  @include tablet-screen() {
+    display: none;
   }
 }
 
