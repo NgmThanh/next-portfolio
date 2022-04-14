@@ -9,7 +9,7 @@ export default function Contact() {
         <div className={'side-grid-layout'}>
           <span className={'side-title col-2'}>Contact</span>
           <h2 className={'title'}>
-            <span>Let's<br></br></span><span className={'italic title-colored'}>work</span><span>&nbsp;together</span>
+            <span>Let&#39;s<br></br></span><span className={'italic title-colored'}>work</span><span>&nbsp;together</span>
           </h2>
         </div>
 
