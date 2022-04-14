@@ -6,7 +6,6 @@ import Text_separator from './Text_separator'
 import About from './About'
 import Works from './Works'
 import Contact from './Contact'
-import Footer from './Footer'
 import React, { useEffect } from 'react'
 import { gsap } from "gsap";
 
@@ -45,10 +44,6 @@ export default function Home() {
         <Works />
         <Contact />
       </main>
-
-      <footer>
-        <Footer />
-      </footer>
     </div>
   )
 }

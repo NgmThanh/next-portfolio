@@ -2,14 +2,18 @@
 
 .text_separator_section {
     width: 100%;
-    margin: 160px 0 160px;
+    margin: 140px 0;
 
-    @include small-screen() {
-        margin: 80px 0 80px;
+    @include large-screen() {
+        margin: 120px 0;
+    }
+
+    @include tablet-screen() {
+        margin: 80px 0;
     }
 
     @include mobile-screen() {
-        margin: 64px 0 64px;
+        margin: 64px 0;
     }
 
     .text_separator__container {

@@ -11,8 +11,8 @@ export default function Menu() {
     window.onscroll = () => {
       let currentScrollPos = window.pageYOffset;
 
-      // if (prevScrollpos > currentScrollPos || window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 1) {
-      if (prevScrollpos > currentScrollPos) {
+      if (prevScrollpos > currentScrollPos || window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 1) {
+      // if (prevScrollpos > currentScrollPos) {
         menu.style.top = "0";
       } else {
         menu.style.top = "-117px";

@@ -50,7 +50,7 @@ body {
   scroll-behavior: smooth;
   background: var(--dark-primary);
   font-family: 'Inter', Roboto, sans-serif;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 * {
@@ -175,26 +175,34 @@ a {
   font-size: 26vw;
   color: var(--dark-secondary);
   text-transform: uppercase;
-  margin: -8vw 0 0;
+  margin: -8vw 0 48px;
   z-index: 0;
   pointer-events: none !important;
   position: relative;
 
-  @include small-screen() {
-    margin-bottom: 24px;
+  &-contact {
+    margin-bottom: 0;
   }
 
-  @include tablet-screen() {
+  @include small-screen() {
     margin-bottom: 32px;
   }
+
+  // @include tablet-screen() {
+  //   margin-bottom: 32px;
+  // }
 }
 
 .border-top {
   width: 100%;
   border-top: 1px solid var(--neutral-secondary);
-  padding-top: 80px;
+  padding-top: 120px;
 
-  @include small-screen() {
+  @include large-screen() {
+    padding-top: 80px;
+  }
+
+  @include tablet-screen() {
     padding-top: 64px;
   }
 
@@ -207,6 +215,10 @@ a {
   position: sticky;
   top: 8vh;
   z-index: 100;
+
+  @include small-screen() {
+    position: static;
+  }
 }
 
 .side-grid-layout {

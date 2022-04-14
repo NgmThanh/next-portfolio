@@ -18,8 +18,14 @@ export default function Contact() {
             <Icon icon={arrowRight} />
           </div>
         </a>
-        <div className={'bg-title'}>TOUCH</div>
+        <div className={'bg-title bg-title-contact'}>TOUCH</div>
       </div>
+
+      <ul className={styles.contact_social}>
+        <li className={'underline'}><a href={'#'}>Dribbble</a></li>
+        <li className={'underline'}><a href={'#'}>Instagram</a></li>
+        <li className={'underline'}><a href={'#'}>LinkedIn</a></li>
+      </ul>
     </section>
   )
 }

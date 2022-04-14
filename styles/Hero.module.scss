@@ -14,12 +14,16 @@
 }
 
 .hero_image {
-    margin-top: 94px;
+    margin-top: 120px;
     position: relative;
     display: flex;
     align-items: flex-start;
 
-    @include small-screen() {
+    @include large-screen() {
+        margin-top: 80px;
+    }
+
+    @include tablet-screen() {
         margin-top: 64px;
     }
 
