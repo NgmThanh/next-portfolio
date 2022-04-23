@@ -4,14 +4,14 @@ import arrowDownRight from '@iconify/icons-carbon/arrow-down-right';
 
 export default function About() {
   return (
-    <section id='about' className={styles.about_section}>
-      <div className={styles.about_title + ' border-top'}>
-        <div className={'side-grid-layout'}>
-          <span className={'side-title col-2'}>Explore</span>
-          <h2 className={'title'}>
-            <span>About&nbsp;</span><span className={'italic title-colored'}>me</span>
-          </h2>
-        </div>
+    <section id='about' className={styles.about_section + ' mt-120'}>
+      <div className={styles.about_title}>
+        <span className={styles.about_title__subtitle + ' side-subtitle'}>Introduction</span>
+
+        <h1 className={'title-primary ml-1'}>
+          <span><div className={'line-left'}></div>About</span><span className={'colored'}>&nbsp;me</span><br></br>
+          <span className={'ml-2'}>and my</span><span className={'colored'}>&nbsp;career</span>
+        </h1>
 
         <a href='#aboutContent'>
           <div className={'arrow-button'}>
@@ -22,71 +22,51 @@ export default function About() {
         <div className={'bg-title'}>About</div>
       </div>
 
-      <div id='aboutContent' className={styles.about_description + ' border-top'}>
-        <div className={'side-grid-layout'}>
-          <span className={'side-title is-sticky col-1'}>Career</span>
-          <div className={styles.about_description__heading + ' is-sticky col-4'}>
-            <h3><span className={'italic-subtitle'}>My designer career</span></h3>
-            <h3><span className={'subtitle'}>Graduate in HCI</span></h3>
-            <p className={styles.about_description__text}>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
-            <div className={'arrow-icon ' + styles.about_description__icon}>
-              <Icon icon={arrowDownRight} />
-            </div>
-          </div>
+      <div id='aboutContent' className={styles.about_description}>
+        <h3 className={'subtitle col-4 ml-2 mt-120'}>I'm a designer based in <span className={'colored'}>France</span></h3>
+        <p className={'col-3 ml-3 mt-120'}>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
+
+        <div className={styles.about_description__flex_content + ' mt-200'}>
+          <div>a</div>
+          <div></div>
         </div>
 
-        <div className={styles.about_description__list}>
-          <div className={styles.about_description__item}>
-            <div className={styles.about_description__item__title}><span>User Experience</span>
-            </div>
-            <div className={styles.about_description__item__text}>
-              <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visua.</p>
-            </div>
-          </div>
+        <h3 className={'subtitle col-4 ml-6 mt-120'}>I'm a designer based in <span className={'colored'}>France</span></h3>
+        <p className={'col-3 ml-7 mt-120'}>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
 
-          <div className={styles.about_description__item}>
-            <div className={styles.about_description__item__title}><span>Usability</span>
-            </div>
-            <div className={styles.about_description__item__text}>
-              <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visua.</p>
-            </div>
-          </div>
-
-          <div className={styles.about_description__item}>
-            <div className={styles.about_description__item__title}><span>UI / UX Design</span>
-            </div>
-            <div className={styles.about_description__item__text}>
-              <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visua.</p>
-            </div>
-          </div>
+        <div className={styles.about_description__canvas + ' col-7 ml-1 mt-200'}>
+          <img src='/about-development.jpg' alt='development image' />
         </div>
       </div>
 
-      <div className={styles.about_illustration}>
-        <div className={styles.about_illustration__canvas_1 + ' col-7'}>
-          <img src='/about-image.jpg' alt='about image' />
+      <div className={styles.about_process + ' mt-200'}>
+          <div className={styles.about_process__item + ' col-10'}>
+            <div className={styles.about_process__item__title}>
+              <span>User Experience</span>
+            </div>
+            <div className={styles.about_process__item__text}>
+              <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visua.</p>
+            </div>
+          </div>
+
+          <div className={styles.about_process__item}>
+            <div className={styles.about_process__item__title}>
+              <span>Usability</span>
+            </div>
+            <div className={styles.about_process__item__text}>
+              <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visua.</p>
+            </div>
+          </div>
+
+          <div className={styles.about_process__item}>
+            <div className={styles.about_process__item__title}>
+              <span>UI / UX Design</span>
+            </div>
+            <div className={styles.about_process__item__text}>
+              <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visua.</p>
+            </div>
+          </div>
         </div>
-
-        <div className={'clearfix'}></div>
-
-        <div className={styles.about_illustration__text_1}>
-          <h3><span>Lorem Ipsum Dolor</span></h3>
-          <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
-        </div>
-
-        <div className={styles.about_illustration__canvas_2 + ' col-7'}>
-          <img src='/about-development.jpg' alt='about image' />
-        </div>
-
-        <div className={'clearfix'}></div>
-
-        <div className={styles.about_illustration__text_2}>
-          <h3><span>Lorem Ipsum Dolor</span></h3>
-          <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
-        </div>
-
-        <div className={'clearfix'}></div>
-      </div>
     </section>
   )
 }

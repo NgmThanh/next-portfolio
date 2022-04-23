@@ -2,19 +2,18 @@
 
 .works_section {
     width: 100%;
-    margin-bottom: 164px;
     padding: 0 var(--active-margin-grid);
+}
 
-    @include large-screen() {
-        margin-bottom: 120px;
-    }
+.works_title {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
 
-    @include small-screen() {
-        margin-bottom: 80px;
-    }
-
-    @include tablet-screen() {
-        margin-bottom: 64px;
+    &__subtitle {
+        top: calc(25% - 120px);
     }
 }
 

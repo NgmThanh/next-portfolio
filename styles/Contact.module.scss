@@ -2,14 +2,25 @@
 
 .contact_section {
     width: 100%;
-    padding: 0 var(--active-margin-grid) 48px;
+    padding: 0 var(--active-margin-grid);
+    position: relative;
+}
 
-    @include small-screen() {
-        padding-bottom: 32px;
+.contact_title {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+
+    &__subtitle {
+        top: calc(50% - 120px);
     }
 }
 
 .contact_social {
+    position: absolute;
+    bottom: 48px;
     display: flex;
     gap: 64px;
 
@@ -22,15 +33,12 @@
     }
 
     li {
-        font-family: 'Poppins';
+        font-family: 'Euclid Square';
         font-weight: 400;
-        font-size: 2.4rem;
+        font-size: 1.6rem;
+        letter-spacing: 0.04em;
         text-transform: uppercase;
         list-style-type: none;
         color: var(--light-primary);
-
-        @include mobile-screen() {
-            font-size: 1.8rem;
-        }
     }
 }

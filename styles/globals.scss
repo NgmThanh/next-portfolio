@@ -6,28 +6,46 @@
   --neutral-primary: #C19A5B;
   --neutral-secondary: #5C5C5E;
   --light-primary: #fff;
-  --text-light: #767676;
+  --text-light: #C6C6C6;
+
+  --col-background: #171719;
+  // --col-background: #FDF6E3;
+
+  --col-accentuation: #C19A5B;
+  --col-white: #fff;
+  --col-neutral-primary: #5C5C5E;
+
+  --col-secondary: #212123;
+  // --col-secondary: rgba(193, 154, 91, 10);
+
+
+  --col-text: #C6C6C6;
+  // --col-text: #2E2E30;
+
   --active-margin-grid: 48px;
 
-  @include small-screen() {
-    --active-margin-grid: 32px;
-  }
+  // @include small-screen() {
+  //   --active-margin-grid: 32px;
+  // }
 
-  @include tablet-screen() {
-    --active-margin-grid: 24px;
-  }
+  // @include tablet-screen() {
+  //   --active-margin-grid: 24px;
+  // }
 
-  @include mobile-screen() {
-    --active-margin-grid: 16px;
-  }
+  // @include mobile-screen() {
+  //   --active-margin-grid: 16px;
+  // }
 
   --vw: calc(100vw - var(--active-margin-grid) * 2);
   --vh: 100vh;
   --col-1: 8vw;
   --col-2: 16vw;
+  --col-3: 24vw;
   --col-4: 32vw;
   --col-5: 40vw;
+  --col-6: 48vw;
   --col-7: 56vw;
+  --col-8: 64vw;
 
   --custom-ease-in: cubic-bezier(.56, .23, .52, 1);
   --custom-ease-out: cubic-bezier(.24, .74, .24, .99);
@@ -36,6 +54,98 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../public/fonts/EuclidSquare-Bold.otf");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../public/fonts/EuclidSquare-BoldItalic.otf");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../public/fonts/EuclidSquare-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 600;
+  font-style: italic;
+  src: url("../public/fonts/EuclidSquare-SemiboldItalic.otf");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../public/fonts/EuclidSquare-Medium.otf");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 500;
+  font-style: italic;
+  src: url("../public/fonts/EuclidSquare-MediumItalic.otf");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../public/fonts/EuclidSquare-Regular.otf");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../public/fonts/EuclidSquare-RegularItalic.otf");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../public/fonts/EuclidSquare-Light.otf");
+}
+
+@font-face {
+  font-family: "Euclid Square";
+  font-weight: 300;
+  font-style: italic;
+  src: url("../public/fonts/EuclidSquare-LightItalic.otf");
+}
+
+@font-face {
+  font-family: "SangBleu Empire";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../public/fonts/SangBleuEmpire-Regular.otf");
+}
+
+@font-face {
+  font-family: "SangBleu Empire";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../public/fonts/SangBleuEmpire-Medium.otf");
+}
+
+@font-face {
+  font-family: "SangBleu Empire";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../public/fonts/SangBleuEmpire-Bold.otf");
+}
 
 /* =============================== */
 /* ========== MAIN CODE ========== */
@@ -48,8 +158,8 @@ body {
   font-size: 62.5%;
   /* 1 rem = 10px */
   scroll-behavior: smooth;
-  background: var(--dark-primary);
-  font-family: 'Inter', Roboto, sans-serif;
+  background: var(--col-background);
+  font-family: 'Euclid Square', Roboto, sans-serif;
   // overflow-x: hidden;
 }
 
@@ -61,7 +171,7 @@ body {
   // cursor: none;
 
   &::selection {
-    background: var(--neutral-secondary);
+    background: var(--col-neutral-primary);
   }
 
   img {
@@ -69,44 +179,138 @@ body {
   }
 }
 
-h3>.subtitle {
-  font-family: 'Poppins';
-  font-size: 4.8rem;
-  font-weight: 600;
-  color: var(--light-primary);
-  text-transform: uppercase;
-
-  @include mobile-screen() {
-    font-size: 4rem;
-  }
-}
-
-h3>.italic-subtitle {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-size: 4.8rem;
-  color: var(--light-primary);
-  font-weight: 400;
-
-  @include mobile-screen() {
-    font-size: 4rem;
-  }
-}
-
 p {
-  font-size: 1.8rem;
+  font-family: 'Euclid Square';
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 28px;
-  color: var(--text-light);
-
-  @include mobile-screen() {
-    font-size: 1.6rem;
-    line-height: 26px;
-  }
+  letter-spacing: -0.02em;
+  color: var(--col-text);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.title-primary,
+.title-secondary {
+  font-family: 'SangBleu Empire', sans-serif;
+  font-weight: 500;
+  font-size: 6.4vw;
+  line-height: 8vw;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--col-white);
+  z-index: 1;
+}
+
+.title-secondary {
+  margin: 0;
+  font-size: 8rem;
+}
+
+h3.subtitle {
+  font-family: 'Euclid Square', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 40px;
+  color: var(--col-text);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.side-subtitle {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--col-accentuation);
+  position: absolute;
+}
+
+.bg-title {
+  font-family: 'Euclid Square';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 26vw;
+  line-height: 26vw;
+  color: var(--dark-secondary);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  z-index: 0;
+  pointer-events: none !important;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  &-contact {
+    margin-bottom: 0;
+  }
+
+  @include small-screen() {
+    margin-bottom: 32px;
+  }
+}
+
+.colored {
+  color: var(--col-accentuation);
+}
+
+.white {
+  color: var(--col-white);
+}
+
+.line-left {
+  width: var(--col-1);
+  height: 1px;
+  margin-right: 32px;
+  background: var(--col-white);
+  float: left;
+  margin-top: 64px;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.mt-120 {
+  margin-top: 120px;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+.ml-1 {
+  margin-left: var(--col-1);
+}
+
+.ml-2 {
+  margin-left: var(--col-2);
+}
+
+.ml-3 {
+  margin-left: var(--col-3);
+}
+
+.ml-4 {
+  margin-left: var(--col-4);
+}
+
+.ml-5 {
+  margin-left: var(--col-5);
+}
+
+.ml-6 {
+  margin-left: var(--col-6);
+}
+
+.ml-7 {
+  margin-left: var(--col-7);
 }
 
 /* ========== CURSOR ========== */
@@ -142,55 +346,6 @@ a {
   @include tablet-screen() {
     display: none;
   }
-}
-
-.italic {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: normal;
-}
-
-.title-colored {
-  color: var(--neutral-primary);
-}
-
-.white {
-  color: var(--light-primary);
-}
-
-.title,
-.bg-title {
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 7.6vw;
-  font-size: clamp(4.8rem, 7.6vw, 20rem);
-  line-height: 110%;
-  letter-spacing: -0.04em;
-  color: var(--light-primary);
-  z-index: 11;
-}
-
-.bg-title {
-  font-size: 26vw;
-  color: var(--dark-secondary);
-  text-transform: uppercase;
-  margin: -8vw 0 48px;
-  z-index: 0;
-  pointer-events: none !important;
-  position: relative;
-
-  &-contact {
-    margin-bottom: 0;
-  }
-
-  @include small-screen() {
-    margin-bottom: 32px;
-  }
-
-  // @include tablet-screen() {
-  //   margin-bottom: 32px;
-  // }
 }
 
 .border-top {
@@ -232,10 +387,10 @@ a {
   }
 }
 
-.side-title {
+.side-text {
   font-size: 1.6rem;
-  color: var(--neutral-primary);
-  margin-right: 32px;
+  text-transform: uppercase;
+  color: var(--col-accentuation);
 }
 
 .arrow-icon,
@@ -307,6 +462,10 @@ a {
   width: var(--col-2);
 }
 
+.col-3 {
+  width: var(--col-3);
+}
+
 .col-4 {
   width: var(--col-4);
 
@@ -331,8 +490,24 @@ a {
   }
 }
 
+.col-6 {
+  width: var(--col-6);
+
+  @include small-screen() {
+    width: 100%;
+  }
+}
+
 .col-7 {
   width: var(--col-7);
+
+  @include small-screen() {
+    width: 100%;
+  }
+}
+
+.col-8 {
+  width: var(--col-8);
 
   @include small-screen() {
     width: 100%;

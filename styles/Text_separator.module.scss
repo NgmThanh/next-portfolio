@@ -2,19 +2,6 @@
 
 .text_separator_section {
     width: 100%;
-    margin: 140px 0;
-
-    @include large-screen() {
-        margin: 120px 0;
-    }
-
-    @include tablet-screen() {
-        margin: 80px 0;
-    }
-
-    @include mobile-screen() {
-        margin: 64px 0;
-    }
 
     .text_separator__container {
         overflow: hidden;
@@ -40,13 +27,13 @@
     }
 
     100% {
-        transform: translate3d(-2217px, 0, 0);
+        transform: translate3d(-2347px, 0, 0);
     }
 }
 
 @keyframes scrollTextRight {
     0% {
-        transform: translate3d(-2217px, 0, 0);
+        transform: translate3d(-2347px, 0, 0);
     }
 
     100% {

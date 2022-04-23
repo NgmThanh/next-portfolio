@@ -4,21 +4,22 @@ import arrowRight from '@iconify/icons-carbon/arrow-right';
 
 export default function Contact() {
   return (
-    <section id="contact" className={styles.contact_section}>
-      <div className={styles.contact_title + ' border-top'}>
-        <div className={'side-grid-layout'}>
-          <span className={'side-title col-2'}>Contact</span>
-          <h2 className={'title'}>
-            <span>Let&#39;s<br></br></span><span className={'italic title-colored'}>work</span><span>&nbsp;together</span>
-          </h2>
-        </div>
+    <section id="contact" className={styles.contact_section + ' mt-120'}>
+      <div className={styles.contact_title}>
+        <span className={styles.contact_title__subtitle + ' side-subtitle'}>Contact</span>
+
+        <h1 className={'title-primary ml-1'}>
+          <span><div className={'line-left'}></div>Let's work</span><br></br>
+          <span className={'ml-2 colored'}>Together</span>
+        </h1>
 
         <a href="mailto:nmthanh99@gmail.com">
           <div className={'arrow-button'}>
             <Icon icon={arrowRight} />
           </div>
         </a>
-        <div className={'bg-title bg-title-contact'}>TOUCH</div>
+
+        <div className={'bg-title'}>Touch</div>
       </div>
 
       <ul className={styles.contact_social}>

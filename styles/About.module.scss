@@ -6,177 +6,34 @@
 }
 
 .about_title {
+    height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: flex-start;
+    position: relative;
+
+    &__subtitle {
+        top: calc(25% - 120px);
+    }
 }
 
-.about_description {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    gap: 48px;
-
-    @include large-screen() {
-        flex-flow: column nowrap;
-        gap: 32px;
-    }
-
-    @include mobile-screen() {
-        gap: 16px;
-    }
-    
-    &__icon,
-    &__text {
-        margin-top: 40px;
-
-        @include small-screen() {
-            margin-top: 32px;
-        }
-
-        @include mobile-screen() {
-            margin-top: 24px;
-        }
-    }
-
-    &__list {
-        margin-top: 280px;
-        margin-right: var(--col-1);
-
-        @include large-screen() {
-            margin: 0;
-        }
-    }
+.about_process {
 
     &__item {
-        padding: 64px 0;
+        padding: 80px 0;
         border-bottom: 1px solid var(--neutral-secondary);
         display: grid;
         gap: 24px;
-        grid-template-columns: var(--col-2) 1fr;
-
-        @include large-screen() {
-            grid-template-columns: var(--col-4) var(--col-4);
-            float: right;
-        }
-
-        @include small-screen() {
-            grid-template-columns: 1fr 1fr;
-        }
+        grid-template-columns: 1fr 1fr;
 
         @include tablet-screen() {
             grid-template-columns: 1fr;
         }
 
-        @include mobile-screen() {
-            padding: 40px 0;
-        }
-
         &__title {
-            font-family: 'Poppins';
-            font-weight: 500;
-            font-size: 24px;
+            font-size: 2.4rem;
             color: var(--light-primary);
             text-transform: uppercase;
-        }
-    }
-}
-
-.about_illustration {
-    position: relative;
-
-    &__canvas_1,
-    &__canvas_2 {
-        height: 600px;
-        float: right;
-        margin: 144px 0;
-
-        @include large-screen() {
-            margin: 120px 0;
-        }
-
-        @include small-screen() {
-            height: 400px;
-            margin: 80px 0;
-        }
-
-        @include tablet-screen() {
-            height: 320px;
-            margin: 64px 0;
-        }
-
-        @include mobile-screen() {
-            margin: 48px 0;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    &__canvas_2 {
-        margin-left: var(--col-1);
-        float: left;
-
-        @include small-screen() {
-            margin-left: 0;
-        }
-    }
-
-    &__text_1,
-    &__text_2 {
-        max-width: var(--col-4);
-        margin-left: var(--col-1);
-
-        @include large-screen() {
-            max-width: var(--col-7);
-        }
-
-        @include small-screen() {
-            max-width: none;
-            margin-left: 0;
-        }
-
-        h3 {
-            font-family: 'Inter';
-            font-weight: 600;
-            font-size: 3.2rem;
-            color: var(--light-primary);
-            text-transform: uppercase;
-            margin-bottom: 48px;
-
-            @include small-screen() {
-                margin-bottom: 32px;
-            }
-
-            @include mobile-screen() {
-                font-size: 2.4rem;
-                margin-bottom: 24px;
-            }
-        }
-    }
-
-    &__text_2 {
-        float: right;
-        text-align: right;
-        margin-right: var(--col-1);
-        margin-bottom: 164px;
-
-        @include large-screen() {
-            margin-bottom: 120px;
-        }
-
-        @include small-screen() {
-            text-align: left;
-            margin-right: 0;
-            margin-bottom: 80px;
-        }
-
-        @include tablet-screen() {
-            margin-bottom: 64px;
         }
     }
 }

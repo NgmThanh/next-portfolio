@@ -1,3 +1,4 @@
+
 import styles from '../styles/Hero.module.scss'
 import { Icon } from '@iconify/react';
 import arrowDownRight from '@iconify/icons-carbon/arrow-down-right';
@@ -8,38 +9,31 @@ export default function Hero() {
   return (
     <section id='home' className={styles.hero_section}>
       <div className={styles.hero_title__container}>
-        <div className={'side-grid-layout'}>
-          <span className={'side-title col-2'}>Digital</span>
-          <h1 className={'title'}>
-            <span>I make</span><br></br><span className={'italic title-colored'}>creative</span><span>&nbsp;design</span>
-          </h1>
-        </div>
+        <span className={styles.hero_subtitle + ' side-subtitle'}>Portfolio</span>
 
+        <h1 className={'title-primary ml-1'}>
+          <span><div className={'line-left'}></div>Creative<br></br></span><span className={'colored ml-2'}>Digital</span><span>&nbsp;Design</span>
+        </h1>
         <a href='#homeContent'>
           <div className={'arrow-button'}>
             <Icon icon={arrowDownRight} />
           </div>
         </a>
-
-        <div className={'bg-title'}>Digital</div>
+        <div className={'bg-title'}>Design</div>
+        <div className={styles.last_updated + ' side-text'}>2022</div>
       </div>
 
-      <div id='homeContent' className={'side-grid-layout border-top'}>
-        <span className={'side-title is-sticky col-2'}>Introduction</span>
-        <div>
-          <div className={styles.hero_description + ' col-4'}>
-            <p>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
-          </div>
-          <div className={styles.hero_image}>
-            <div className={styles.hero_image__canvas + ' col-7'}>
-              <img src='/hero-image.png' alt='hero image' />
-            </div>
-
-            <div className={styles.hero_image__icon + ' arrow-icon is-sticky'}>
-              <Icon icon={arrowDown} />
-            </div>
-          </div>
+      <div id='homeContent' className={styles.hero_content + ' mt-200'}>
+        <div className={styles.hero_content__canvas + ' col-8'}>
+          <img src='/hero-image.png' alt='hero image' />
         </div>
+        <h3 className={styles.hero_content__subtitle + ' subtitle col-4 ml-5 mt-200'}>Every great design begins with an even <span className={'colored'}>better story</span></h3>
+        <p className={styles.hero_content__text + ' col-3 ml-6 mt-120'}>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
+        <a href='#about'>
+          <div className={styles.hero_content__circle + ' col-3 ml-2'}>
+            <Icon icon={arrowDown} />
+          </div>
+        </a>
       </div>
     </section>
   )
