@@ -25,8 +25,8 @@ export default function Works() {
       <div className={'clearfix'}></div>
 
       <div id='worksContent' className={styles.works_content + ' border-top mt-200'}>
-        <div className={'side-grid-layout'}>
-          <div className={'side-subtitle is-sticky col-2'}>
+        <div>
+          <div className={'side-subtitle is-sticky'}>
             <span>Projects</span>
             <div className={'arrow-icon ' + styles.works_content__icon}>
               <Icon icon={arrowDownRight} />

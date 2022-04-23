@@ -9,7 +9,7 @@ export default function Contact() {
         <span className={styles.contact_title__subtitle + ' side-subtitle'}>Contact</span>
 
         <h1 className={'title-primary ml-1'}>
-          <span><div className={'line-left'}></div>Let's work</span><br></br>
+          <span><div className={'line-left'}></div>Let&#039;s work</span><br></br>
           <span className={'ml-2 colored'}>Together</span>
         </h1>
 

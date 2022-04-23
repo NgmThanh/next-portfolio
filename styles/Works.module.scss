@@ -18,12 +18,8 @@
 }
 
 .works_content {
-    display: flex;
-    flex-flow: row nowrap;
-
-    @include small-screen() {
-        flex-flow: column;
-    }
+    display: grid;
+    grid-template-columns: var(--col-2) 1fr;
 
     &__icon {
         margin-top: 40px;
@@ -88,10 +84,10 @@
         }
 
         &__title {
-            font-family: 'Poppins';
+            font-family: 'Euclid Square';
             font-weight: 500;
             font-size: 2.4rem;
-            color: var(--light-primary);
+            color: var(--col-white);
             margin-top: 40px;
 
             @include small-screen() {
@@ -100,10 +96,10 @@
         }
 
         &__description {
-            font-family: 'Inter';
+            font-family: 'Euclid Square';
             font-weight: 500;
             font-size: 1.6rem;
-            color: var(--text-light);
+            color: var(--col-neutral-primary);
             margin: 8px 0 48px;
             position: relative;
             padding-left: 20px;
@@ -117,7 +113,7 @@
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
-                background: var(--text-light);
+                background: var(--col-neutral-primary);
                 position: absolute;
                 left: 0;
                 top: 5px;
