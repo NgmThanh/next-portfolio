@@ -2,22 +2,30 @@
 
 .works_section {
     width: 100%;
-    padding: 0 var(--active-margin-grid);
+}
+
+.works_background {
+    height: 100vh;
+    background: linear-gradient(180deg, #171719 10.75%, rgba(23, 23, 25, 0.2) 56.3%, #171719 100%), url("../public/background/milad-fakurian-EHhB5Zh-qFE-unsplash.jpg");
+    background-size: cover;
 }
 
 .works_title {
+    padding: 0 var(--active-margin-grid);
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     position: relative;
-
+    
     &__subtitle {
         top: calc(25% - 120px);
     }
 }
 
 .works_content {
+    padding-left: var(--active-margin-grid);
+    padding-right: var(--active-margin-grid);
     display: grid;
     grid-template-columns: var(--col-2) 1fr;
 

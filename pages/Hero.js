@@ -8,19 +8,25 @@ export default function Hero() {
 
   return (
     <section id='home' className={styles.hero_section}>
-      <div className={styles.hero_title__container}>
-        <span className={styles.hero_subtitle + ' side-subtitle'}>Portfolio</span>
+      <div className={styles.hero_background}>
+        <div className={styles.hero_title__container}>
+          <span className={styles.hero_subtitle + ' side-subtitle'}>Portfolio</span>
 
-        <h1 className={'title-primary ml-1'}>
-          <span><div className={'line-left'}></div>Creative<br></br></span><span className={'colored ml-2'}>Digital</span><span>&nbsp;Design</span>
-        </h1>
-        <a href='#homeContent'>
-          <div className={'arrow-button'}>
-            <Icon icon={arrowDownRight} />
+          <h1 className={'title-primary ml-1'}>
+            <span><div className={'line-left'}></div>Creative<br></br></span><span className={'colored ml-2'}>Digital</span><span>&nbsp;Design</span>
+          </h1>
+          <a href='#homeContent'>
+            <div className={'arrow-button'}>
+              <Icon icon={arrowDownRight} />
+            </div>
+          </a>
+          <div className={styles.last_updated + ' side-subtitle'}>2022</div>
+          <div className={styles.scroll_down}>Scroll Down
+            <div className={styles.scroll_down__container}>
+              <div className={styles.scroll_down__bar}></div>
+            </div>
           </div>
-        </a>
-        <div className={'bg-title'}>Design</div>
-        <div className={styles.last_updated + ' side-text'}>2022</div>
+        </div>
       </div>
 
       <div id='homeContent' className={styles.hero_content + ' mt-200'}>

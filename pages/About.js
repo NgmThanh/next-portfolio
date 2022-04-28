@@ -5,21 +5,21 @@ import arrowDownRight from '@iconify/icons-carbon/arrow-down-right';
 export default function About() {
   return (
     <section id='about' className={styles.about_section + ' mt-120'}>
-      <div className={styles.about_title}>
-        <span className={styles.about_title__subtitle + ' side-subtitle'}>Introduction</span>
+      <div className={styles.about_background}>
+        <div className={styles.about_title}>
+          <span className={styles.about_title__subtitle + ' side-subtitle'}>Introduction</span>
 
-        <h1 className={'title-primary ml-1'}>
-          <span><div className={'line-left'}></div>About</span><span className={'colored'}>&nbsp;me</span><br></br>
-          <span className={'ml-2'}>and my</span><span className={'colored'}>&nbsp;career</span>
-        </h1>
+          <h1 className={'title-primary ml-1'}>
+            <span><div className={'line-left'}></div>About</span><span className={'colored'}>&nbsp;me</span><br></br>
+            <span className={'ml-2'}>and my</span><span className={'colored'}>&nbsp;career</span>
+          </h1>
 
-        <a href='#aboutContent'>
-          <div className={'arrow-button'}>
-            <Icon icon={arrowDownRight} />
-          </div>
-        </a>
-
-        <div className={'bg-title'}>About</div>
+          <a href='#aboutContent'>
+            <div className={'arrow-button'}>
+              <Icon icon={arrowDownRight} />
+            </div>
+          </a>
+        </div>
       </div>
 
       <div id='aboutContent' className={styles.about_description}>

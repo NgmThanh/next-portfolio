@@ -2,10 +2,16 @@
 
 .about_section {
     width: 100%;
-    padding: 0 var(--active-margin-grid);
+}
+
+.about_background {
+    height: 100vh;
+    background: linear-gradient(180deg, #171719 10.75%, rgba(23, 23, 25, 0.2) 56.3%, #171719 100%), url("../public/background/milad-fakurian-_S-zZyQiOr8-unsplash.jpg");
+    background-size: cover;
 }
 
 .about_title {
+    padding: 0 var(--active-margin-grid);
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
@@ -18,6 +24,7 @@
 }
 
 .about_description {
+    padding: 0 var(--active-margin-grid);
 
     &__flex_content {
         display: flex;
@@ -38,6 +45,7 @@
 }
 
 .about_process {
+    padding: 0 var(--active-margin-grid);
     display: grid;
     grid-template-columns: var(--col-2) 1fr;
 
