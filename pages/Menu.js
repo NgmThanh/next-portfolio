@@ -12,7 +12,6 @@ export default function Menu() {
       let currentScrollPos = window.pageYOffset;
 
       if (prevScrollpos > currentScrollPos || window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 1) {
-      // if (prevScrollpos > currentScrollPos) {
         menu.style.top = "0";
       } else {
         menu.style.top = "-100px";
@@ -25,7 +24,7 @@ export default function Menu() {
   return (
     <div id={'menu'} className={styles.menu}>
       <div className={styles.menu__inner}>
-        <div><span>M</span><span className={'italic side-subtitle'}>Thanh</span></div>
+        <a href="/"><div><span>M</span><span className={'italic side-subtitle'}>Thanh</span></div></a>
         <ul>
           <li><a href={'#home'}>Home</a></li>
           <li><a id="aboutButton" href={'#about'}>About</a></li>

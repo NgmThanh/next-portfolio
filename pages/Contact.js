@@ -4,7 +4,7 @@ import arrowRight from '@iconify/icons-carbon/arrow-right';
 
 export default function Contact() {
   return (
-    <section id="contact" className={styles.contact_section + ' mt-120'}>
+    <section id="contact" className={styles.contact_section + ' mt-200'}>
       <div className={styles.contact_background}>
         <div className={styles.contact_title}>
           <span className={styles.contact_title__subtitle + ' side-subtitle'}>Contact</span>

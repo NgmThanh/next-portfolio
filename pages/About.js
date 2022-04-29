@@ -4,7 +4,7 @@ import arrowDownRight from '@iconify/icons-carbon/arrow-down-right';
 
 export default function About() {
   return (
-    <section id='about' className={styles.about_section + ' mt-120'}>
+    <section id='about' className={styles.about_section + ' mt-200'}>
       <div className={styles.about_background}>
         <div className={styles.about_title}>
           <span className={styles.about_title__subtitle + ' side-subtitle'}>Introduction</span>
@@ -22,8 +22,8 @@ export default function About() {
         </div>
       </div>
 
-      <div id='aboutContent' className={styles.about_description}>
-        <h3 className={'subtitle col-4 ml-2 mt-120'}>I&#039;m a designer based in <span className={'colored'}>France</span></h3>
+      <div id='aboutContent' className={styles.about_description + ' mt-200'}>
+        <h3 className={'subtitle col-4 ml-2'}>I&#039;m a designer based in <span className={'colored'}>France</span></h3>
         <p className={'col-3 ml-3 mt-120'}>Always in love with code and design, i like to learn new things every day and challenge myself with new projects, translating concepts into visual design by paying close attention to details, and convert it into highly interactive experiences.</p>
 
         <div className={styles.about_description__flex_content + ' mt-200'}>

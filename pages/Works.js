@@ -4,7 +4,7 @@ import arrowDownRight from '@iconify/icons-carbon/arrow-down-right';
 
 export default function Works() {
   return (
-    <section id='works' className={styles.works_section + ' mt-120'}>
+    <section id='works' className={styles.works_section + ' mt-200'}>
       <div className={styles.works_background}>
         <div className={styles.works_title}>
           <span className={styles.works_title__subtitle + ' side-subtitle'}>Projects</span>
